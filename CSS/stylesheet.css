@@ -1,0 +1,240 @@
+body {
+  background-color: white;
+  font-family: arial;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/*All Global Divs*/
+.container-long {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-short {
+  width: 40%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-long-statistics {
+  width: 80%;
+  margin: auto;
+  display: table;
+  overflow: hidden;
+}
+
+/*Section - Header*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff5151;
+  color: white;
+  min-height: 70px;
+  padding-top: 30px;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #MyName {
+  float: left;
+}
+
+header #MyName h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 15px;
+}
+
+header .highlight, header .current a {
+  color: black;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/*Section - SayHello*/
+#SayHello {
+  min-height: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+#SayHello h1 {
+  font-size: 40px;
+  color: black;
+}
+
+#SayHello p {
+  font-size: 20px;
+  color: black;
+}
+
+#AboutMeProfPic {
+  width: 200px;
+  margin-top: 60px;
+  border-radius: 100px;
+}
+
+/*Section-Statistics*/
+#MyStatistics {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#MyStatistics .Statbox {
+  display: table-cell;
+  padding: 20px;
+}
+
+#MyStatistics .Statbox img {
+  width: 150px;
+}
+
+#MyStatistics .Statbox h2 {
+  color: black;
+  font-size: 30px;
+}
+
+#MyStatistics .Statbox p {
+  color: black;
+  font-size: 20px;
+}
+
+/*section-ValueIBring*/
+#ValueIBring {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+#ValueIBring h1 {
+  color: black;
+  font-size: 40px;
+}
+
+#ValueIBring .ValueBox{
+  padding: 10px;
+}
+
+#ValueIBring img {
+  width: 100px;
+}
+
+#ValueIBring h2 {
+  color: black;
+  font-size: 35px;
+}
+
+#ValueIBring p {
+  color: black;
+  font-size: 20px;
+}
+
+/*section-Freetime*/
+#Freetime {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+#Freetime img {
+  width: 100px;
+}
+
+#Freetime .Freetimebox {
+  display: inline-block;
+  padding: 20px;
+}
+
+#Freetime h1 {
+  color: black;
+  font-size: 40px;
+}
+
+
+/*Section-footer*/
+footer {
+  background-color: #323232;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  header nav,
+    header nav li,
+    header #MyName{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  #MyStatistics .Statbox,
+  #Freetime .Freetimebox,
+  .container-short,
+  .container-long,
+  .container-long-statistics
+ {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  header{
+    padding: 20px;
+    font-size:
+  }
+  header a{
+    font-size: 20px;
+  }
+  #AboutMeProfPic{
+    width: 160px;
+  }
+  #SayHello h1,
+  #ValueIBring h1,
+  #Freetime h1
+ {
+      font-size: 35px;
+  }
+  #MyStatistics .Statbox,
+  #ValueIBring .ValueBox{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    }
+  #MyStatistics{
+    padding: 20px;
+    text-align: center;
+  }
+}
